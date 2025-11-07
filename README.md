@@ -15,7 +15,7 @@ Esta aplicación permite la autenticación mediante Google OAuth 2.0, utilizando
 cd backend
 ```
 
-2. Crea un entorno virtual:
+2. Crea un entorno virtual (SI NO SIRVEN LOS COMANDOS CON py, UTILIZALOS CON python):
 ```bash
 # Windows
 py -m venv venv
@@ -43,6 +43,8 @@ pip install -r requirements.txt
    - Selecciona "Web application"
    - En "Authorized redirect URIs" agrega:
      * http://localhost:5000/authorize
+    - En "Authorized redirect URIs" agrega:
+     * http://localhost:5173
    - Guarda y copia el Client ID y Client Secret
 
 5. Crea el archivo `.env` en la carpeta backend:

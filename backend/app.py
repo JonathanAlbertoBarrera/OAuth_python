@@ -44,7 +44,7 @@ def authorize():
         return redirect(f'http://localhost:5173/welcome?name={user_info.get("name")}')
     except Exception as e:
         print(f"Error en /authorize: {str(e)}")
-        return jsonify({"error": str(e)}), 500
+        return redirect(f'http://localhost:5173')
 
 @app.route('/logout')
 def logout():
